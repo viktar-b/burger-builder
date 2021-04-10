@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
-//TODO revise map and reduce
 const burger = ( props ) => {
     let transformedIngredient = Object.keys(props.ingredients)
         .map(
@@ -20,7 +19,7 @@ const burger = ( props ) => {
                 return arr.concat(el)
             } , [] 
         ); 
-    console.log(transformedIngredient.length);
+    
     if (transformedIngredient.length === 0) {
         transformedIngredient = <p>Please add ingredients</p>;
     }

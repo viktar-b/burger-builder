@@ -1,2 +1,0 @@
-Containers are statefull components, while components are 
-stateless.
